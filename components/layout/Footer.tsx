@@ -1,9 +1,9 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   footerMenuLinks,
   footerQuickLinks,
-  mainNavigation,
 } from "@/data/navigation";
 import { siteConfig } from "@/data/site";
 import NewsletterForm from "@/components/layout/NewsletterForm";
@@ -155,17 +155,21 @@ export default function Footer() {
           <p className="text-sm text-cream-light/50">
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
-          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {mainNavigation.slice(0, 4).map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-sm text-cream-light/50 transition-colors hover:text-cream-light"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+          <a
+            href="https://shei-it.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-cream-light/50 transition-colors hover:text-cream-light"
+          >
+            <Image
+              src="/Shei IT Logo.png"
+              alt="Shei IT Logo"
+              width={28}
+              height={28}
+              className="rounded"
+            />
+            <span className="text-sm font-medium tracking-wide">SHEI IT</span>
+          </a>
         </div>
       </Container>
     </footer>
