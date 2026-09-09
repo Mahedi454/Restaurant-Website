@@ -2,6 +2,7 @@ import Container from "@/components/ui/Container";
 import Badge from "@/components/ui/Badge";
 import AnimatedImage from "@/components/animations/AnimatedImage";
 import Reveal from "@/components/animations/Reveal";
+import { images } from "@/data/images";
 
 export default function ChefSection() {
   return (
@@ -15,7 +16,7 @@ export default function ChefSection() {
               className="pointer-events-none absolute -right-6 -top-6 h-44 w-44 rounded-full border border-terracotta/25"
             />
             <AnimatedImage
-              src="/images/chef-1.svg"
+              src={images.chef}
               alt="Executive Chef Marco Reyes at iFOODS"
               width={840}
               height={1080}

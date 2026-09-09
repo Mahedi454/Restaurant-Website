@@ -16,7 +16,7 @@ export const featuredDishes: Dish[] = [
     description: "Creamy mushroom ragù, truffle oil, parmesan, and fresh herbs.",
     price: 18.9,
     rating: 4.9,
-    image: "/images/menu/truffle-mushroom-pasta.svg",
+    image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
   },
   {
     id: "classic-beef-burger",
@@ -25,7 +25,7 @@ export const featuredDishes: Dish[] = [
     description: "Grass-fed beef, aged cheddar, smoked bacon, and brioche.",
     price: 16.5,
     rating: 4.8,
-    image: "/images/menu/classic-beef-burger.svg",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
   },
   {
     id: "grilled-chicken-steak",
@@ -34,7 +34,7 @@ export const featuredDishes: Dish[] = [
     description: "Free-range chicken, herb butter, and charred greens.",
     price: 19.9,
     rating: 4.7,
-    image: "/images/menu/grilled-chicken-steak.svg",
+    image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6",
   },
   {
     id: "creamy-alfredo-pasta",
@@ -43,7 +43,7 @@ export const featuredDishes: Dish[] = [
     description: "Fettuccine, parmesan cream, cracked pepper, and parsley.",
     price: 17.5,
     rating: 4.6,
-    image: "/images/menu/creamy-alfredo-pasta.svg",
+    image: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb",
   },
   {
     id: "margherita-pizza",
@@ -52,7 +52,7 @@ export const featuredDishes: Dish[] = [
     description: "San Marzano tomatoes, fresh mozzarella, and basil.",
     price: 15.8,
     rating: 4.9,
-    image: "/images/menu/margherita-pizza.svg",
+    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002",
   },
   {
     id: "grilled-salmon",
@@ -61,7 +61,7 @@ export const featuredDishes: Dish[] = [
     description: "Atlantic salmon, lemon beurre blanc, and asparagus.",
     price: 24.5,
     rating: 4.8,
-    image: "/images/menu/grilled-salmon.svg",
+    image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288",
   },
   {
     id: "crispy-fried-chicken",
@@ -70,7 +70,7 @@ export const featuredDishes: Dish[] = [
     description: "Buttermilk-brined, honey glaze, slaw, and house sauce.",
     price: 14.9,
     rating: 4.7,
-    image: "/images/menu/crispy-fried-chicken.svg",
+    image: "https://images.unsplash.com/photo-1562967916-eb82221dfb92",
   },
   {
     id: "chocolate-lava-cake",
@@ -79,6 +79,6 @@ export const featuredDishes: Dish[] = [
     description: "Molten chocolate center, vanilla gelato, and berries.",
     price: 9.5,
     rating: 5.0,
-    image: "/images/menu/chocolate-lava-cake.svg",
+    image: "https://images.unsplash.com/photo-1762631176731-42672d735b85",
   },
 ];

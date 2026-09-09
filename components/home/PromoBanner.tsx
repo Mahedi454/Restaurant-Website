@@ -6,6 +6,7 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import Reveal from "@/components/animations/Reveal";
+import { images } from "@/data/images";
 
 export default function PromoBanner() {
   const reduceMotion = useReducedMotion();
@@ -29,7 +30,7 @@ export default function PromoBanner() {
         className="absolute inset-0"
       >
         <Image
-          src="/images/promo-1.svg"
+          src={images.foodSpread}
           alt=""
           fill
           sizes="100vw"

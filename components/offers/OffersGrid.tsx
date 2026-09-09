@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import StaggerContainer, {
   StaggerItem,
 } from "@/components/animations/StaggerContainer";
+import { images } from "@/data/images";
 import { cn } from "@/lib/utils";
 
 interface Offer {
@@ -26,7 +27,7 @@ const offers: Offer[] = [
       "Four sharing starters, two wood-fired pizzas, a tray of mains, and a carafe of house punch — the table version of a second home.",
     discount: "25% Off",
     validity: "Any evening · Tables of 4+",
-    image: "/images/gallery-5.svg",
+    image: images.mainAbout,
     ctaLabel: "Book the Family Table",
     href: "/reservation",
     featured: true,
@@ -37,7 +38,7 @@ const offers: Offer[] = [
       "Two courses for two plus a bottle of house wine. Slow afternoons, warm bread, zero decisions left to make.",
     discount: "20% Off",
     validity: "Fri–Sun · 12:00 – 16:00",
-    image: "/images/gallery-2.svg",
+    image: images.foodSpread,
     ctaLabel: "Book This Offer",
     href: "/reservation",
   },
@@ -47,7 +48,7 @@ const offers: Offer[] = [
       "A main, a garden side, and a house drink — built to be done well and done quickly before you're back to real life.",
     discount: "15% Off",
     validity: "Mon–Fri · 12:00 – 15:00",
-    image: "/images/gallery-8.svg",
+    image: images.steak,
     ctaLabel: "See the Combo Menu",
     href: "/menu",
   },
@@ -57,7 +58,7 @@ const offers: Offer[] = [
       "Five courses chosen that morning by the kitchen — fire, acidity, and a little theatre. Only at the first seating.",
     discount: "30% Off",
     validity: "Thu–Sat · First seating",
-    image: "/images/gallery-3.svg",
+    image: images.salmon,
     ctaLabel: "Reserve the Tasting",
     href: "/reservation",
   },
@@ -67,7 +68,7 @@ const offers: Offer[] = [
       "Order any main and the dessert trolley comes to you on the house. Consider the molten one non-negotiable.",
     discount: "Free Dessert",
     validity: "All week · After 17:00",
-    image: "/images/gallery-4.svg",
+    image: images.dessert,
     ctaLabel: "Browse the Menu",
     href: "/menu",
   },

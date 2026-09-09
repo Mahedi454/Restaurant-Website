@@ -1,31 +1,32 @@
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import AnimatedImage from "@/components/animations/AnimatedImage";
+import { images } from "@/data/images";
 
 const tiles = [
   {
-    src: "/images/gallery-7.svg",
+    src: images.foodSpread,
     alt: "Seasonal sharing board on the pass",
     className: "col-span-2 row-span-2 aspect-square",
   },
   {
-    src: "/images/gallery-3.svg",
-    alt: "Grilled fillet with charred citrus",
+    src: images.steak,
+    alt: "Dry-aged ribeye finished with herb butter",
     className: "aspect-square",
   },
   {
-    src: "/images/chef-1.svg",
-    alt: "Executive Chef Marco Reyes plating a dish",
+    src: images.kitchen,
+    alt: "The open kitchen mid-service",
     className: "aspect-square",
   },
   {
-    src: "/images/gallery-5.svg",
+    src: images.pizza,
     alt: "Wood-fired margherita pizza leaving the oven",
     className: "col-span-2 aspect-[2/1]",
   },
   {
-    src: "/images/gallery-8.svg",
-    alt: "Herb-roasted vegetable bowl",
+    src: images.salmon,
+    alt: "Grilled salmon with charred lemon",
     className: "col-span-2 aspect-[2/1] sm:col-span-1 sm:aspect-square",
   },
 ];

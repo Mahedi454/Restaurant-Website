@@ -1,10 +1,12 @@
 import { Navigation } from "lucide-react";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/animations/Reveal";
 import HoursCard from "@/components/ui/HoursCard";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/data/site";
+import { images } from "@/data/images";
 
 const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   `${siteConfig.address} restaurant`,
@@ -28,6 +30,13 @@ export default function MapPlaceholder() {
               role="img"
               aria-label={`Map placeholder showing iFOODS at ${siteConfig.address}`}
             >
+              <Image
+                src={images.restaurantInterior}
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 40rem, 100vw"
+                className="absolute inset-0 object-cover"
+              />
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 opacity-70"

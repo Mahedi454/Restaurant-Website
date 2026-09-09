@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import AnimatedImage from "@/components/animations/AnimatedImage";
 import Reveal from "@/components/animations/Reveal";
 import { siteConfig } from "@/data/site";
+import { images } from "@/data/images";
 
 const milestones = [
   { year: "2009", title: "A small stove, one room" },
@@ -23,7 +24,7 @@ export default function AboutStory() {
               className="pointer-events-none absolute -left-6 -top-6 h-40 w-40 rounded-full border border-terracotta/25"
             />
             <AnimatedImage
-              src="/images/about-1.svg"
+              src={images.dining}
               alt="Inside the iFOODS dining room"
               width={960}
               height={1080}

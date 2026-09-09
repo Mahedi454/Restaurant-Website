@@ -7,6 +7,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import MapPlaceholder from "@/components/contact/MapPlaceholder";
 import { openGraph } from "@/lib/seo";
+import { images } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -25,7 +26,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="We'd Love to Hear From You"
         description="Questions, events, feedback, or just to say hello — someone from the restaurant replies within the day."
-        image="/images/gallery-6.svg"
+        image={images.dining}
       />
       <section className="bg-cream py-20 sm:py-24" aria-labelledby="contact-form-heading">
         <Container>

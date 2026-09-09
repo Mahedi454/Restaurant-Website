@@ -6,6 +6,7 @@ import Reveal from "@/components/animations/Reveal";
 import ReservationForm from "@/components/reservation/ReservationForm";
 import RestaurantInfo from "@/components/reservation/RestaurantInfo";
 import { openGraph } from "@/lib/seo";
+import { images } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "Reserve a Table",
@@ -24,7 +25,7 @@ export default function ReservationPage() {
         eyebrow="Reservations"
         title="Reserve a Table"
         description="Ten minutes of your day, one table with your name on it. We'll keep the light warm and the bread ready."
-        image="/images/reservation-1.svg"
+        image={images.restaurantInterior}
       />
       <section className="bg-cream py-20 sm:py-24" aria-labelledby="reservation-form-heading">
         <Container>

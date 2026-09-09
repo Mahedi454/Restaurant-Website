@@ -8,6 +8,7 @@ import ValuesGrid from "@/components/about/ValuesGrid";
 import StatsBand from "@/components/about/StatsBand";
 import AboutGallery from "@/components/about/AboutGallery";
 import { openGraph } from "@/lib/seo";
+import { images } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -26,7 +27,7 @@ export default function AboutPage() {
         eyebrow="About iFOODS"
         title="A modern kitchen with a warm, timeless soul"
         description="Sixteen years of seasonal cooking, honest hospitality, and one stubborn belief — dinner should feel like a celebration."
-        image="/images/about-1.svg"
+        image={images.mainAbout}
       />
       <AboutStory />
       <MissionBand />

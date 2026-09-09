@@ -4,6 +4,7 @@ import Container from "@/components/ui/Container";
 import Reveal from "@/components/animations/Reveal";
 import MenuFilter from "@/components/menu/MenuFilter";
 import { openGraph } from "@/lib/seo";
+import { images } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "Our Menu",
@@ -24,9 +25,9 @@ export default async function MenuPage({ searchParams }: MenuPageProps) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-charcoal text-cream-light">
+      <section className="relative flex min-h-[62vh] items-center overflow-hidden bg-charcoal text-center text-cream-light">
         <Image
-          src="/images/gallery-7.svg"
+          src={images.foodSpread}
           alt=""
           fill
           priority
@@ -35,26 +36,31 @@ export default async function MenuPage({ searchParams }: MenuPageProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/55 to-charcoal/40" />
         <Container className="relative py-20 sm:py-24">
-          <Reveal as="span" className="inline-flex items-center gap-3">
-            <span className="h-px w-8 bg-terracotta-light" />
-            <span className="text-xs font-medium uppercase tracking-[0.22em] text-terracotta-light">
-              Taste the Craft
-            </span>
-            <span className="h-px w-8 bg-terracotta-light" />
-          </Reveal>
-          <Reveal
-            as="h1"
-            delay={0.08}
-            className="mt-5 max-w-3xl text-balance font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl"
-          >
-            The Menu
-          </Reveal>
-          <Reveal as="p" delay={0.16} className="mt-5 max-w-2xl">
-            <span className="text-base leading-relaxed text-cream-light/75 sm:text-lg">
-              Thirty dishes crafted daily from seasonal ingredients — search,
-              filter by craving, and build your order in a few taps.
-            </span>
-          </Reveal>
+          <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+            <Reveal
+              as="span"
+              className="inline-flex items-center justify-center gap-3"
+            >
+              <span className="h-px w-8 bg-terracotta-light" />
+              <span className="text-xs font-medium uppercase tracking-[0.22em] text-terracotta-light">
+                Taste the Craft
+              </span>
+              <span className="h-px w-8 bg-terracotta-light" />
+            </Reveal>
+            <Reveal
+              as="h1"
+              delay={0.08}
+              className="mt-5 text-balance font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl"
+            >
+              The Menu
+            </Reveal>
+            <Reveal as="p" delay={0.16} className="mt-5">
+              <span className="mx-auto block max-w-2xl text-base leading-relaxed text-cream-light/75 sm:text-lg">
+                Thirty dishes crafted daily from seasonal ingredients — search,
+                filter by craving, and build your order in a few taps.
+              </span>
+            </Reveal>
+          </div>
         </Container>
       </section>
 

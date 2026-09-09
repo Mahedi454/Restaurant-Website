@@ -3,6 +3,7 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import Reveal from "@/components/animations/Reveal";
+import { images } from "@/data/images";
 
 export default function ReservationCTA() {
   return (
@@ -11,7 +12,7 @@ export default function ReservationCTA() {
       className="relative overflow-hidden bg-charcoal"
     >
       <Image
-        src="/images/reservation-1.svg"
+        src={images.atmosphere}
         alt=""
         fill
         priority

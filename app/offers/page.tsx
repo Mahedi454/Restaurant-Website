@@ -3,6 +3,7 @@ import PageHero from "@/components/ui/PageHero";
 import ReservationCTA from "@/components/home/ReservationCTA";
 import OffersGrid from "@/components/offers/OffersGrid";
 import { openGraph } from "@/lib/seo";
+import { images } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "Offers",
@@ -21,7 +22,7 @@ export default function OffersPage() {
         eyebrow="Seasonal Offers"
         title="Good Food, Better Reasons"
         description="Weekend specials, family tables, lunch combos, and the chef's say-so — grab one before it rotates off."
-        image="/images/gallery-2.svg"
+        image={images.foodSpread}
       />
       <OffersGrid />
       <ReservationCTA />

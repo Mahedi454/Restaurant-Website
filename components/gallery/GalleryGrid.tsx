@@ -10,6 +10,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { EASE } from "@/lib/animations";
 import { useFocusTrap } from "@/lib/useFocusTrap";
+import { images } from "@/data/images";
 
 interface GalleryItem {
   src: string;
@@ -19,18 +20,18 @@ interface GalleryItem {
 }
 
 const galleryItems: GalleryItem[] = [
-  { src: "/images/gallery-1.svg", alt: "Slow-cooked breakfast bowl", category: "Breakfast", fill: "aspect-[3/4]" },
-  { src: "/images/chef-1.svg", alt: "Executive Chef Marco Reyes in the kitchen", category: "Chef", fill: "aspect-[4/4]" },
-  { src: "/images/gallery-2.svg", alt: "Stacked gourmet burger on a wooden board", category: "Burgers", fill: "aspect-[4/3]" },
-  { src: "/images/gallery-3.svg", alt: "Grilled fillet with charred citrus", category: "Mains", fill: "aspect-[3/4]" },
-  { src: "/images/gallery-4.svg", alt: "Molten chocolate dessert", category: "Desserts", fill: "aspect-[4/3]" },
-  { src: "/images/about-1.svg", alt: "The warm, wood-lined dining room at dusk", category: "Interior", fill: "aspect-[3/4]" },
-  { src: "/images/gallery-5.svg", alt: "Wood-fired margherita pizza", category: "Pizza", fill: "aspect-[4/3]" },
-  { src: "/images/gallery-6.svg", alt: "Signature craft cocktail at the bar", category: "Bar", fill: "aspect-[3/4]" },
-  { src: "/images/gallery-7.svg", alt: "Seasonal sharing board on the granite pass", category: "Chef's Table", fill: "aspect-[4/3]" },
-  { src: "/images/reservation-1.svg", alt: "Set tables under soft evening light", category: "Dining", fill: "aspect-[3/4]" },
-  { src: "/images/gallery-8.svg", alt: "Herb-roasted vegetable bowl", category: "Mains", fill: "aspect-[4/3]" },
-  { src: "/images/promo-1.svg", alt: "The weekend special laid out for a toast", category: "Events", fill: "aspect-[3/4]" },
+  { src: images.restaurantInterior, alt: "The warm, softly lit dining room at iFOODS", category: "Restaurant", fill: "aspect-[3/4]" },
+  { src: images.dining, alt: "Set tables under soft evening light", category: "Dining", fill: "aspect-[4/3]" },
+  { src: images.foodSpread, alt: "The seasonal spread, laid out for the whole table", category: "Food", fill: "aspect-[4/3]" },
+  { src: images.pizza, alt: "Wood-fired margherita pizza with basil", category: "Pizza", fill: "aspect-[4/3]" },
+  { src: images.burger, alt: "Classic cheeseburger on a toasted bun", category: "Burgers", fill: "aspect-[4/3]" },
+  { src: images.pasta, alt: "Truffle mushroom tagliatelle", category: "Pasta", fill: "aspect-[3/4]" },
+  { src: images.steak, alt: "Dry-aged ribeye with herb butter", category: "Steak", fill: "aspect-[4/3]" },
+  { src: images.salmon, alt: "Grilled salmon fillet with herbs", category: "Seafood", fill: "aspect-[3/4]" },
+  { src: images.dessert, alt: "Decadent chocolate dessert", category: "Desserts", fill: "aspect-[3/4]" },
+  { src: images.coffee, alt: "A cappuccino with latte art", category: "Drinks", fill: "aspect-[4/3]" },
+  { src: images.chef, alt: "Executive Chef Marco Reyes in the kitchen", category: "Chef", fill: "aspect-[4/4]" },
+  { src: images.atmosphere, alt: "The restaurant interior at dusk", category: "Interior", fill: "aspect-[3/4]" },
 ];
 
 export default function GalleryGrid() {
