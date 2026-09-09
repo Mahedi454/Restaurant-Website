@@ -12,9 +12,10 @@ import { cn } from "@/lib/utils";
 interface RevealProps {
   children: ReactNode;
   className?: string;
+  id?: string;
   delay?: number;
   once?: boolean;
-  as?: "div" | "section" | "span" | "li" | "p" | "h1" | "h2" | "h3";
+  as?: "div" | "section" | "span" | "li" | "p" | "h1" | "h2" | "h3" | "blockquote";
 }
 
 const motionTags = {
@@ -26,11 +27,13 @@ const motionTags = {
   h1: motion.h1,
   h2: motion.h2,
   h3: motion.h3,
+  blockquote: motion.blockquote,
 } as const;
 
 export default function Reveal({
   children,
   className,
+  id,
   delay = 0,
   once = true,
   as = "div",
@@ -39,6 +42,7 @@ export default function Reveal({
   const Tag = motionTags[as] as typeof motion.div;
 
   const sharedProps: HTMLMotionProps<"div"> = {
+    id,
     className: cn(className),
     initial: reduceMotion ? false : { opacity: 0, y: 24 },
     whileInView: reduceMotion ? undefined : { opacity: 1, y: 0 },

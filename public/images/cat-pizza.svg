@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <filter id="blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+  <filter id="sb" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d98a4e"/>
+      <stop offset="1" stop-color="#a34e26"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.34" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.55" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0.34"/>
+    </linearGradient>
+    <radialGradient id="plateG">
+      <stop offset="0" stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#e9dfd2"/>
+    </radialGradient>
+    <radialGradient id="plateRim">
+      <stop offset="0.8" stop-color="#f3eadc"/>
+      <stop offset="1" stop-color="#d9cbb8"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <circle cx="320" cy="153.6" r="384" fill="url(#glow)"/>
+  <g>
+    <circle cx="115.19999999999999" cy="105.6" r="30" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="524.8" cy="86.39999999999999" r="44" fill="#fff" opacity="0.16000000000000003" filter="url(#sb)"/><circle cx="563.2" cy="336" r="24" fill="#fff" opacity="0.18000000000000002" filter="url(#sb)"/><circle cx="64" cy="326.40000000000003" r="20" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="352" cy="67.2" r="16" fill="#fff" opacity="0.22000000000000003" filter="url(#sb)"/>
+    
+  <ellipse cx="320" cy="347.264" rx="239.36000000000004" ry="174.08000000000004" fill="#160f0b" opacity="0.28" filter="url(#blur)" transform="translate(0 27.852800000000006)"/>
+  <ellipse cx="320" cy="347.264" rx="239.36000000000004" ry="174.08000000000004" fill="url(#plateG)" stroke="url(#plateRim)" stroke-width="10.771200000000002"/>
+  <ellipse cx="320" cy="347.264" rx="205.84960000000004" ry="149.70880000000002" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2"/>
+    <ellipse cx="320" cy="316.8" rx="169.72800000000004" ry="121.85600000000002" fill="#d98d43"/>
+    <ellipse cx="320" cy="316.8" rx="152.32" ry="107.92960000000002" fill="#c64f32"/>
+    <ellipse cx="320" cy="316.8" rx="130.56" ry="94.00320000000004" fill="#e07a3f"/>
+    <circle cx="320" cy="316.8" r="34.816" fill="#c64f32"/>
+    <circle cx="411.392" cy="316.8" r="21.760000000000005" fill="#a83320"/><circle cx="384.623902946201" cy="361.11353344882355" r="21.760000000000005" fill="#a83320"/><circle cx="320" cy="379.46880000000004" r="21.760000000000005" fill="#a83320"/><circle cx="255.37609705379904" cy="361.11353344882355" r="21.760000000000005" fill="#a83320"/><circle cx="228.608" cy="316.8" r="21.760000000000005" fill="#a83320"/><circle cx="255.37609705379901" cy="272.4864665511765" r="21.760000000000005" fill="#a83320"/><circle cx="320" cy="254.1312" r="21.760000000000005" fill="#a83320"/><circle cx="384.62390294620093" cy="272.4864665511765" r="21.760000000000005" fill="#a83320"/>
+    <circle cx="420.2114361475139" cy="345.2717769122178" r="11.968000000000002" fill="#5f7a3a"/><circle cx="360.90097991089186" cy="384.55063155423886" r="11.968000000000002" fill="#5f7a3a"/><circle cx="277.6312843568188" cy="384.1420850911294" r="11.968000000000002" fill="#5f7a3a"/><circle cx="219.18060780619226" cy="344.2854585001193" r="11.968000000000002" fill="#5f7a3a"/><circle cx="219.78856385248608" cy="288.32822308778225" r="11.968000000000002" fill="#5f7a3a"/><circle cx="279.0990200891082" cy="249.04936844576116" r="11.968000000000002" fill="#5f7a3a"/><circle cx="362.3687156431812" cy="249.45791490887066" r="11.968000000000002" fill="#5f7a3a"/><circle cx="420.81939219380774" cy="289.3145414998807" r="11.968000000000002" fill="#5f7a3a"/>
+    
+    <path d="M 304 234.944
+             C 290 204.944,
+               320 176.944,
+               304 142.944"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/>
+    <path d="M 336 234.944
+             C 322 204.944,
+               352 176.944,
+               336 142.944"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/></g>
+  
+</svg>

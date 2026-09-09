@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="720" viewBox="0 0 1920 720">
+  <filter id="blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+  <filter id="sb" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38241d"/>
+      <stop offset="1" stop-color="#140b07"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.34" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.55" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0.34"/>
+    </linearGradient>
+    <radialGradient id="plateG">
+      <stop offset="0" stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#e9dfd2"/>
+    </radialGradient>
+    <radialGradient id="plateRim">
+      <stop offset="0.8" stop-color="#f3eadc"/>
+      <stop offset="1" stop-color="#d9cbb8"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="720" fill="url(#bg)"/>
+  <circle cx="960" cy="230.4" r="1152" fill="url(#glow)"/>
+  <g>
+    <circle cx="345.59999999999997" cy="158.4" r="30" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="1574.3999999999999" cy="129.6" r="44" fill="#fff" opacity="0.16000000000000003" filter="url(#sb)"/><circle cx="1689.6" cy="503.99999999999994" r="24" fill="#fff" opacity="0.18000000000000002" filter="url(#sb)"/><circle cx="192" cy="489.6" r="20" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="1056" cy="100.80000000000001" r="16" fill="#fff" opacity="0.22000000000000003" filter="url(#sb)"/>
+    
+  <ellipse cx="960" cy="532.8" rx="691.9680000000001" ry="470.01600000000013" fill="#160f0b" opacity="0.28" filter="url(#blur)" transform="translate(0 75.20256000000002)"/>
+  <ellipse cx="960" cy="532.8" rx="691.9680000000001" ry="470.01600000000013" fill="url(#plateG)" stroke="url(#plateRim)" stroke-width="31.138560000000002"/>
+  <ellipse cx="960" cy="532.8" rx="595.09248" ry="404.2137600000001" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2"/>
+    
+  <ellipse cx="960" cy="503.99999999999994" rx="430.84800000000007" ry="323.7888000000001" fill="none" stroke="#71371f" stroke-opacity="0.8" stroke-width="25.850880000000004" transform="translate(0 129.51552000000004)"/>
+  <ellipse cx="960" cy="542.854656" rx="430.84800000000007" ry="278.45836800000006" fill="#b7603a"/>
+  <g opacity="0.9">
+    <ellipse cx="813.51168" cy="393.9118079999999" rx="103.40352000000001" ry="97.13664000000003" fill="#71371f" opacity="0.85"/>
+    <circle cx="1089.2544" cy="465.1453439999999" r="60.31872000000001" fill="#71371f" opacity="0.7"/>
+    <circle cx="968.61696" cy="355.05715199999986" r="51.70176000000001" fill="#71371f" opacity="0.6"/>
+  </g>
+    <circle cx="633.5999999999999" cy="475.20000000000005" r="130.56000000000003" fill="#71371f" opacity="0.8"/>
+    <circle cx="1299.4560000000001" cy="475.20000000000005" r="110.97600000000001" fill="#71371f" opacity="0.75"/>
+    
+    <path d="M 939.2 431.6
+             C 921 392.6,
+               960 356.20000000000005,
+               939.2 312"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/>
+    <path d="M 980.8 431.6
+             C 962.6 392.6,
+               1001.6 356.20000000000005,
+               980.8 312"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/>
+    
+    <ellipse cx="1181.952" cy="432" rx="16" ry="7.04" fill="#7d8f4d" transform="rotate(-28 1181.952 432)" opacity="0.9"/>
+    <ellipse cx="1207.952" cy="436" rx="18" ry="7.92" fill="#7d8f4d" transform="rotate(22 1207.952 436)" opacity="0.9"/><path d="M 1181.952 432 q 16 -2 32 3" stroke="#7d8f4d" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+  <g><rect width="1920" height="720" fill="url(#vig)"/></g>
+</svg>

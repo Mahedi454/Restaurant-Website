@@ -8,6 +8,7 @@ interface SectionHeadingProps {
   align?: "center" | "left";
   className?: string;
   light?: boolean;
+  id?: string;
 }
 
 export default function SectionHeading({
@@ -17,6 +18,7 @@ export default function SectionHeading({
   align = "center",
   className,
   light = false,
+  id,
 }: SectionHeadingProps) {
   return (
     <div
@@ -51,7 +53,7 @@ export default function SectionHeading({
           />
         </Reveal>
       ) : null}
-      <Reveal as="h2" delay={0.06} className="text-balance">
+      <Reveal as="h2" delay={0.06} id={id} className="text-balance">
         <span
           className={cn(
             "text-3xl leading-tight sm:text-4xl lg:text-5xl",

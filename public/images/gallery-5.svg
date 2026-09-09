@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <filter id="blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+  <filter id="sb" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0c39a"/>
+      <stop offset="1" stop-color="#bb9456"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.34" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.55" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0.34"/>
+    </linearGradient>
+    <radialGradient id="plateG">
+      <stop offset="0" stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#e9dfd2"/>
+    </radialGradient>
+    <radialGradient id="plateRim">
+      <stop offset="0.8" stop-color="#f3eadc"/>
+      <stop offset="1" stop-color="#d9cbb8"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <circle cx="450" cy="224" r="540" fill="url(#glow)"/>
+  <g>
+    <circle cx="162" cy="154" r="30" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="738" cy="126" r="44" fill="#fff" opacity="0.16000000000000003" filter="url(#sb)"/><circle cx="792" cy="489.99999999999994" r="24" fill="#fff" opacity="0.18000000000000002" filter="url(#sb)"/><circle cx="90" cy="476.00000000000006" r="20" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="495.00000000000006" cy="98.00000000000001" r="16" fill="#fff" opacity="0.22000000000000003" filter="url(#sb)"/>
+    
+  <ellipse cx="450" cy="504.84000000000003" rx="336.6" ry="244.8" fill="#160f0b" opacity="0.28" filter="url(#blur)" transform="translate(0 39.168)"/>
+  <ellipse cx="450" cy="504.84000000000003" rx="336.6" ry="244.8" fill="url(#plateG)" stroke="url(#plateRim)" stroke-width="15.147"/>
+  <ellipse cx="450" cy="504.84000000000003" rx="289.476" ry="210.52800000000002" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2"/>
+    <ellipse cx="450" cy="462" rx="238.68" ry="171.35999999999999" fill="#d98d43"/>
+    <ellipse cx="450" cy="462" rx="214.2" ry="151.776" fill="#c64f32"/>
+    <ellipse cx="450" cy="462" rx="183.6" ry="132.192" fill="#e07a3f"/>
+    <circle cx="450" cy="462" r="48.96" fill="#c64f32"/>
+    <circle cx="578.52" cy="462" r="30.6" fill="#a83320"/><circle cx="540.8773635180951" cy="524.315906412408" r="30.6" fill="#a83320"/><circle cx="450" cy="550.128" r="30.6" fill="#a83320"/><circle cx="359.1226364819049" cy="524.315906412408" r="30.6" fill="#a83320"/><circle cx="321.48" cy="462" r="30.6" fill="#a83320"/><circle cx="359.1226364819049" cy="399.684093587592" r="30.6" fill="#a83320"/><circle cx="450" cy="373.872" r="30.6" fill="#a83320"/><circle cx="540.8773635180951" cy="399.6840935875919" r="30.6" fill="#a83320"/>
+    <circle cx="590.9223320824415" cy="502.03843628280623" r="16.830000000000002" fill="#5f7a3a"/><circle cx="507.5170029996916" cy="557.2743256231483" r="16.830000000000002" fill="#5f7a3a"/><circle cx="390.4189936267765" cy="556.6998071594006" r="16.830000000000002" fill="#5f7a3a"/><circle cx="308.2227297274579" cy="500.6514260157928" r="16.830000000000002" fill="#5f7a3a"/><circle cx="309.07766791755853" cy="421.9615637171938" r="16.830000000000002" fill="#5f7a3a"/><circle cx="392.4829970003084" cy="366.72567437685166" r="16.830000000000002" fill="#5f7a3a"/><circle cx="509.58100637322354" cy="367.3001928405994" r="16.830000000000002" fill="#5f7a3a"/><circle cx="591.7772702725422" cy="423.34857398420723" r="16.830000000000002" fill="#5f7a3a"/>
+    
+    <path d="M 434 330.64
+             C 420 300.64,
+               450 272.64,
+               434 238.64"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/>
+    <path d="M 466 330.64
+             C 452 300.64,
+               482 272.64,
+               466 238.64"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/></g>
+  
+</svg>

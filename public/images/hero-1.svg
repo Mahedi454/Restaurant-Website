@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <filter id="blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+  <filter id="sb" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3d2b23"/>
+      <stop offset="1" stop-color="#191311"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.34" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.55" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0.34"/>
+    </linearGradient>
+    <radialGradient id="plateG">
+      <stop offset="0" stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#e9dfd2"/>
+    </radialGradient>
+    <radialGradient id="plateRim">
+      <stop offset="0.8" stop-color="#f3eadc"/>
+      <stop offset="1" stop-color="#d9cbb8"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <circle cx="600" cy="384" r="720" fill="url(#glow)"/>
+  <g>
+    <circle cx="216" cy="264" r="30" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="983.9999999999999" cy="216" r="44" fill="#fff" opacity="0.16000000000000003" filter="url(#sb)"/><circle cx="1056" cy="840" r="24" fill="#fff" opacity="0.18000000000000002" filter="url(#sb)"/><circle cx="120" cy="816.0000000000001" r="20" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="660" cy="168.00000000000003" r="16" fill="#fff" opacity="0.22000000000000003" filter="url(#sb)"/>
+    
+  <ellipse cx="600" cy="888" rx="432.4800000000001" ry="293.7600000000001" fill="#160f0b" opacity="0.28" filter="url(#blur)" transform="translate(0 47.00160000000002)"/>
+  <ellipse cx="600" cy="888" rx="432.4800000000001" ry="293.7600000000001" fill="url(#plateG)" stroke="url(#plateRim)" stroke-width="19.461600000000004"/>
+  <ellipse cx="600" cy="888" rx="371.93280000000004" ry="252.6336000000001" fill="none" stroke="#fff" stroke-opacity="0.55" stroke-width="2"/>
+    
+  <ellipse cx="600" cy="840" rx="269.28000000000003" ry="202.36800000000005" fill="none" stroke="#8f3d1c" stroke-opacity="0.8" stroke-width="16.1568" transform="translate(0 80.94720000000002)"/>
+  <ellipse cx="600" cy="864.28416" rx="269.28000000000003" ry="174.03648000000004" fill="#c45d3e"/>
+  <g opacity="0.9">
+    <ellipse cx="508.4448" cy="771.19488" rx="64.6272" ry="60.710400000000014" fill="#8f3d1c" opacity="0.85"/>
+    <circle cx="680.784" cy="815.71584" r="37.699200000000005" fill="#8f3d1c" opacity="0.7"/>
+    <circle cx="605.3856" cy="746.91072" r="32.3136" fill="#8f3d1c" opacity="0.6"/>
+  </g>
+    <circle cx="396" cy="792" r="81.60000000000002" fill="#8f3d1c" opacity="0.8"/>
+    <circle cx="812.1600000000001" cy="792" r="69.36000000000001" fill="#8f3d1c" opacity="0.75"/>
+    
+    <path d="M 579.2 681.2
+             C 561 642.2,
+               600 605.8,
+               579.2 561.6"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/>
+    <path d="M 620.8 681.2
+             C 602.6 642.2,
+               641.6 605.8,
+               620.8 561.6"
+          fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round" filter="url(#sb)"/>
+    
+    <ellipse cx="738.72" cy="720" rx="16" ry="7.04" fill="#7d8f4d" transform="rotate(-28 738.72 720)" opacity="0.9"/>
+    <ellipse cx="764.72" cy="724" rx="18" ry="7.92" fill="#7d8f4d" transform="rotate(22 764.72 724)" opacity="0.9"/><path d="M 738.72 720 q 16 -2 32 3" stroke="#7d8f4d" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+  <g><rect width="1200" height="1200" fill="url(#vig)"/></g>
+</svg>

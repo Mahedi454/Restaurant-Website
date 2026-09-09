@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 800 900">
+  <filter id="blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+  <filter id="sb" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9ad90"/>
+      <stop offset="1" stop-color="#837c56"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.34" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.55" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0.34"/>
+    </linearGradient>
+    <radialGradient id="plateG">
+      <stop offset="0" stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#e9dfd2"/>
+    </radialGradient>
+    <radialGradient id="plateRim">
+      <stop offset="0.8" stop-color="#f3eadc"/>
+      <stop offset="1" stop-color="#d9cbb8"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#bg)"/>
+  <circle cx="400" cy="288" r="540" fill="url(#glow)"/>
+  <g>
+    <circle cx="144" cy="198" r="30" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="656" cy="162" r="44" fill="#fff" opacity="0.16000000000000003" filter="url(#sb)"/><circle cx="704" cy="630" r="24" fill="#fff" opacity="0.18000000000000002" filter="url(#sb)"/><circle cx="80" cy="612" r="20" fill="#fff" opacity="0.2" filter="url(#sb)"/><circle cx="440.00000000000006" cy="126.00000000000001" r="16" fill="#fff" opacity="0.22000000000000003" filter="url(#sb)"/>
+    <rect x="332" y="465.48" width="136" height="378" rx="21.76" fill="#f3e9da" opacity="0.35" stroke="#e8d8c0" stroke-width="4" transform="translate(6 12)"/>
+    <rect x="332" y="465.48" width="136" height="378" rx="21.76" fill="#e8c9a2" opacity="0.9"/>
+    <rect x="345.6" y="510.84000000000003" width="108.80000000000001" height="294.84000000000003" rx="13.600000000000001" fill="#c05a3a" opacity="0.85"/>
+    <rect x="345.6" y="578.88" width="108.80000000000001" height="75.60000000000001" fill="#8c3a22" opacity="0.6"/>
+    <path d="M 359.2 699.84 Q 400 737.64, 440.8 699.84" stroke="#fff" stroke-opacity="0.5" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M 361.92 737.64 Q 400 775.44, 438.08 737.64" stroke="#fff" stroke-opacity="0.4" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M 434 465.48 Q 502 306.72, 536 352.08000000000004" stroke="#d9cbb8" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="440.8" cy="525.96" rx="21.76" ry="16.32" fill="#c64f32" opacity="0.85"/>
+    <circle cx="400" cy="616.6800000000001" r="13.600000000000001" fill="#fff" opacity="0.5"/>
+    <circle cx="424.48" cy="662.04" r="14.96" fill="#fff" opacity="0.4"/></g>
+  
+</svg>
