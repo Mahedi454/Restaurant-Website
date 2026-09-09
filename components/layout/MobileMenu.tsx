@@ -1,13 +1,15 @@
 "use client";
 
-import { AnimatePresence, motion, type Variants } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion, type Variants } from "framer-motion";
 import { ArrowRight, Search, ShoppingBag, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRef } from "react";
 import { mainNavigation } from "@/data/navigation";
 import { EASE } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { useCartCount, useUiStore } from "@/store";
+import { useFocusTrap } from "@/lib/useFocusTrap";
 
 interface MobileMenuProps {
   open: boolean;
@@ -57,6 +59,10 @@ export default function MobileMenu({
   const pathname = usePathname();
   const count = useCartCount();
   const openCart = useUiStore((state) => state.openCart);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const reduceMotion = useReducedMotion();
+
+  useFocusTrap(panelRef, open);
 
   return (
     <AnimatePresence>
@@ -67,21 +73,23 @@ export default function MobileMenu({
             aria-label="Close menu"
             className="absolute inset-0 bg-charcoal/50 backdrop-blur-sm"
             variants={overlayVariants}
-            initial="hidden"
+            initial={reduceMotion ? "visible" : "hidden"}
             animate="visible"
-            exit="exit"
+            exit={reduceMotion ? undefined : "exit"}
             transition={{ duration: 0.3, ease: EASE }}
             onClick={onClose}
           />
           <motion.div
+            ref={panelRef}
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation"
+            tabIndex={-1}
             className="absolute inset-y-0 right-0 flex w-[86%] max-w-sm flex-col bg-cream-light shadow-lifted"
             variants={panelVariants}
-            initial="hidden"
+            initial={reduceMotion ? "visible" : "hidden"}
             animate="visible"
-            exit="exit"
+            exit={reduceMotion ? undefined : "exit"}
           >
             <div className="flex items-center justify-between border-b border-beige px-6 py-5">
               <Link
@@ -130,15 +138,14 @@ export default function MobileMenu({
                 exit="exit"
                 className="px-6 pt-6"
               >
-                <div className="flex h-12 items-center gap-3 rounded-full border border-beige bg-cream px-4">
-                  <Search size={17} className="text-stone" />
-                  <input
-                    type="search"
-                    placeholder="Search dishes, cocktails…"
-                    aria-label="Search menu"
-                    className="w-full bg-transparent text-sm text-charcoal outline-none placeholder:text-stone"
-                  />
-                </div>
+                <Link
+                  href="/menu"
+                  onClick={onClose}
+                  className="flex h-12 items-center gap-3 rounded-full border border-beige bg-cream px-4 text-sm text-stone transition-colors hover:border-terracotta hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta"
+                >
+                  <Search size={17} className="shrink-0 text-stone" aria-hidden="true" />
+                  <span>Search the menu</span>
+                </Link>
               </motion.div>
             ) : null}
 

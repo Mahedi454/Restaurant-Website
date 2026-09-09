@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import PageHero from "@/components/ui/PageHero";
 import Container from "@/components/ui/Container";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
+import { openGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Gallery",
   description:
     "A visual tour of iFOODS — the kitchen, the bar, the dining room, and the plates. Browse the gallery and step inside.",
+  openGraph: openGraph(
+    "Gallery",
+    "A visual tour of iFOODS — the kitchen, the bar, the dining room, and the plates.",
+  ),
 };
 
 export default function GalleryPage() {

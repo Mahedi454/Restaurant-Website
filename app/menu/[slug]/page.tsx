@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getMenuItemBySlug, getRelatedItems, menuItems } from "@/data/menu";
 import { categories } from "@/data/categories";
 import FoodDetailsClient from "@/components/menu/FoodDetailsClient";
+import { openGraph } from "@/lib/seo";
 
 interface MenuItemPageProps {
   params: Promise<{ slug: string }>;
@@ -18,11 +19,18 @@ export async function generateMetadata({
   const { slug } = await params;
   const item = getMenuItemBySlug(slug);
   if (!item) {
-    return { title: "Dish not found" };
+    return {
+      title: "Dish not found",
+      openGraph: openGraph("Dish not found", "This dish could not be found."),
+    };
   }
+  const categoryName =
+    categories.find((category) => category.id === item.category)?.name ??
+    item.category;
   return {
     title: item.name,
     description: item.description,
+    openGraph: openGraph(item.name, `${item.description} — ${categoryName} at iFOODS.`),
   };
 }
 

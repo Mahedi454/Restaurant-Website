@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Heart, ShoppingBag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,6 +20,7 @@ export default function MenuCard({ item }: MenuCardProps) {
   const addItem = useCartStore((state) => state.addItem);
   const { toast } = useToast();
   const [isFavorite, setIsFavorite] = useState(false);
+  const reduceMotion = useReducedMotion();
   const categoryName =
     categories.find((category) => category.id === item.category)?.name ??
     item.category;
@@ -61,7 +62,7 @@ export default function MenuCard({ item }: MenuCardProps) {
 
       <motion.button
         type="button"
-        whileTap={{ scale: 0.82 }}
+        whileTap={reduceMotion ? undefined : { scale: 0.82 }}
         onClick={toggleFavorite}
         aria-pressed={isFavorite}
         aria-label={`${isFavorite ? "Remove" : "Add"} ${item.name} ${isFavorite ? "from" : "to"} favorites`}

@@ -5,11 +5,16 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/animations/Reveal";
 import ReservationForm from "@/components/reservation/ReservationForm";
 import RestaurantInfo from "@/components/reservation/RestaurantInfo";
+import { openGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Reserve a Table",
   description:
     "Reserve a table at iFOODS — pick a date, time, and party size, tell us what you need, and we'll have the bread ready.",
+  openGraph: openGraph(
+    "Reserve a Table",
+    "Reserve a table at iFOODS — pick a date, time, and party size, and we'll have the bread ready.",
+  ),
 };
 
 export default function ReservationPage() {

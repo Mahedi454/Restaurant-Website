@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import PageHero from "@/components/ui/PageHero";
 import ReservationCTA from "@/components/home/ReservationCTA";
 import OffersGrid from "@/components/offers/OffersGrid";
+import { openGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Offers",
   description:
     "Current iFOODS offers — the Weekend Special, Family Dinner, Lunch Combo, Chef's Special Tasting, and Dessert Delight.",
+  openGraph: openGraph(
+    "Offers",
+    "Current iFOODS offers — the Weekend Special, Family Dinner, Lunch Combo, Chef's Special Tasting, and Dessert Delight.",
+  ),
 };
 
 export default function OffersPage() {

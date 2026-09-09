@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import QuantityControl from "@/components/cart/QuantityControl";
 import { Button } from "@/components/ui/Button";
-import { useToast } from "@/components/ui/Toast";
 import Reveal from "@/components/animations/Reveal";
 import {
   FREE_DELIVERY_THRESHOLD,
@@ -17,6 +16,7 @@ import {
   useCartTotal,
 } from "@/store";
 import { EASE } from "@/lib/animations";
+import { useMounted } from "@/lib/useMounted";
 
 export default function CartPageClient() {
   const items = useCartItems();
@@ -27,8 +27,8 @@ export default function CartPageClient() {
   const increaseQuantity = useCartStore((state) => state.increaseQuantity);
   const decreaseQuantity = useCartStore((state) => state.decreaseQuantity);
   const clear = useCartStore((state) => state.clear);
-  const { toast } = useToast();
   const reduceMotion = useReducedMotion();
+  const mounted = useMounted();
 
   const count = items.reduce((sum, item) => sum + item.quantity, 0);
   const remainingForFreeDelivery = Math.max(
@@ -36,15 +36,7 @@ export default function CartPageClient() {
     FREE_DELIVERY_THRESHOLD - subtotal,
   );
 
-  const handleCheckout = () => {
-    toast({
-      title: "Checkout is a frontend demo",
-      description: "Payment will be wired up in a future milestone.",
-      variant: "info",
-    });
-  };
-
-  if (items.length === 0) {
+  if (!mounted || items.length === 0) {
     return (
       <div className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center">
         <div className="flex size-24 items-center justify-center rounded-full bg-beige/60">
@@ -222,7 +214,7 @@ export default function CartPageClient() {
             variant="primary"
             size="lg"
             className="mt-6 w-full"
-            onClick={handleCheckout}
+            href="/checkout"
           >
             Proceed to Checkout
             <ArrowRight size={16} />

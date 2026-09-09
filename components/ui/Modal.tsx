@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { X } from "lucide-react";
 import {
   useEffect,
@@ -8,6 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import { cn } from "@/lib/utils";
+import { useFocusTrap } from "@/lib/useFocusTrap";
 
 interface ModalProps {
   open: boolean;
@@ -26,12 +27,13 @@ export default function Modal({
   className,
   closeOnBackdrop = true,
 }: ModalProps) {
-  const previousActiveRef = useRef<HTMLElement | null>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const reduceMotion = useReducedMotion();
+
+  useFocusTrap(dialogRef, open);
 
   useEffect(() => {
     if (!open) return;
-
-    previousActiveRef.current = document.activeElement as HTMLElement;
 
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -45,7 +47,6 @@ export default function Modal({
     return () => {
       document.body.style.overflow = originalOverflow;
       window.removeEventListener("keydown", handleKeyDown);
-      previousActiveRef.current?.focus();
     };
   }, [open, onClose]);
 
@@ -57,23 +58,25 @@ export default function Modal({
             type="button"
             aria-label="Close modal"
             className="absolute inset-0 cursor-default bg-charcoal/60 backdrop-blur-sm"
-            initial={{ opacity: 0 }}
+            initial={reduceMotion ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            exit={reduceMotion ? undefined : { opacity: 0 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
             onClick={closeOnBackdrop ? onClose : undefined}
           />
           <motion.div
+            ref={dialogRef}
             role="dialog"
             aria-modal="true"
             aria-label={title}
+            tabIndex={-1}
             className={cn(
               "relative z-10 w-full max-w-lg overflow-hidden rounded-2xl bg-cream-light shadow-lifted",
               className,
             )}
-            initial={{ opacity: 0, y: 24, scale: 0.96 }}
+            initial={reduceMotion ? false : { opacity: 0, y: 24, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 16, scale: 0.97 }}
+            exit={reduceMotion ? undefined : { opacity: 0, y: 16, scale: 0.97 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
           >
             <button

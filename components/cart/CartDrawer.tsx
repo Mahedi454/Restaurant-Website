@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useReducedMotion, type Variants } from "framer
 import { ArrowRight, ShoppingBag, Trash2, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import QuantityControl from "@/components/cart/QuantityControl";
 import { Button } from "@/components/ui/Button";
 import {
@@ -17,6 +17,7 @@ import {
   useUiStore,
 } from "@/store";
 import { EASE } from "@/lib/animations";
+import { useFocusTrap } from "@/lib/useFocusTrap";
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 12 },
@@ -35,6 +36,7 @@ const itemVariants: Variants = {
 export default function CartDrawer() {
   const open = useUiStore((state) => state.cartOpen);
   const closeCart = useUiStore((state) => state.closeCart);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const items = useCartItems();
   const subtotal = useCartSubtotal();
   const deliveryFee = useCartDeliveryFee();
@@ -43,6 +45,8 @@ export default function CartDrawer() {
   const increaseQuantity = useCartStore((state) => state.increaseQuantity);
   const decreaseQuantity = useCartStore((state) => state.decreaseQuantity);
   const reduceMotion = useReducedMotion();
+
+  useFocusTrap(dialogRef, open);
 
   const count = items.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -69,7 +73,14 @@ export default function CartDrawer() {
   return (
     <AnimatePresence>
       {open ? (
-        <div className="fixed inset-0 z-[90]" role="dialog" aria-modal="true" aria-label="Shopping cart">
+        <div
+          ref={dialogRef}
+          tabIndex={-1}
+          className="fixed inset-0 z-[90]"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Shopping cart"
+        >
           <motion.button
             type="button"
             aria-label="Close cart"
@@ -244,9 +255,9 @@ export default function CartDrawer() {
                     size="lg"
                     className="mt-5 w-full"
                     onClick={closeCart}
-                    href="/cart"
+                    href="/checkout"
                   >
-                    View Cart &amp; Checkout
+                    Checkout
                     <ArrowRight size={16} />
                   </Button>
                   <button

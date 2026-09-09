@@ -199,7 +199,7 @@ export default function FoodDetailsClient({
                 </Button>
                 <motion.button
                   type="button"
-                  whileTap={{ scale: 0.85 }}
+                  whileTap={reduceMotion ? undefined : { scale: 0.85 }}
                   onClick={handleAddFavorite}
                   aria-pressed={isFavorite}
                   aria-label={`${isFavorite ? "Remove" : "Add"} ${item.name} ${isFavorite ? "from" : "to"} favorites`}

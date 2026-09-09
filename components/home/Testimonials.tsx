@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion, type Variants } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion, type Variants } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useState } from "react";
@@ -11,16 +11,29 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Rating from "@/components/ui/Rating";
 
-const slideVariants: Variants = {
-  enter: (direction: number) => ({ opacity: 0, x: direction * 60 }),
-  center: { opacity: 1, x: 0 },
-  exit: (direction: number) => ({ opacity: 0, x: direction * -60 }),
-};
-
 export default function Testimonials() {
   const [[index, direction], setState] = useState<[number, number]>([0, 1]);
   const testimonial = testimonials[index];
   const count = testimonials.length;
+  const reduceMotion = useReducedMotion();
+
+  const slideVariants: Variants = reduceMotion
+    ? {
+        enter: { opacity: 0 },
+        center: { opacity: 1 },
+        exit: { opacity: 0 },
+      }
+    : {
+        enter: (slideDirection: number) => ({
+          opacity: 0,
+          x: slideDirection * 60,
+        }),
+        center: { opacity: 1, x: 0 },
+        exit: (slideDirection: number) => ({
+          opacity: 0,
+          x: slideDirection * -60,
+        }),
+      };
 
   const paginate = useCallback(
     (nextDirection: number) => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { Minus, Plus } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface QuantityControlProps {
@@ -30,6 +30,8 @@ export default function QuantityControl({
   );
   const buttonSize = size === "sm" ? "size-7" : "size-9";
   const textSize = size === "sm" ? "text-sm" : "text-base";
+  const reduceMotion = useReducedMotion();
+  const tapAnimation = reduceMotion ? undefined : { scale: 0.85 };
 
   return (
     <div
@@ -39,7 +41,7 @@ export default function QuantityControl({
     >
       <motion.button
         type="button"
-        whileTap={{ scale: 0.85 }}
+        whileTap={tapAnimation}
         onClick={onDecrease}
         aria-label="Decrease quantity"
         disabled={value <= 1}
@@ -52,7 +54,7 @@ export default function QuantityControl({
       </span>
       <motion.button
         type="button"
-        whileTap={{ scale: 0.85 }}
+        whileTap={tapAnimation}
         onClick={onIncrease}
         aria-label="Increase quantity"
         className={cn(buttonClasses, buttonSize)}

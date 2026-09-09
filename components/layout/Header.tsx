@@ -9,6 +9,7 @@ import { mainNavigation } from "@/data/navigation";
 import { EASE } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { useCartCount, useUiStore } from "@/store";
+import { useMounted } from "@/lib/useMounted";
 import { Button } from "@/components/ui/Button";
 import MobileMenu from "@/components/layout/MobileMenu";
 
@@ -25,6 +26,7 @@ export default function Header({
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const count = useCartCount();
+  const mounted = useMounted();
   const openCart = useUiStore((state) => state.openCart);
   const reduceMotion = useReducedMotion();
 
@@ -128,9 +130,9 @@ export default function Header({
                 transition={{ duration: 0.45, ease: EASE, delay: 0.4 }}
                 className="hidden sm:block"
               >
-                <button type="button" aria-label="Search menu" className={iconClasses}>
+                <Link href="/menu" aria-label="Search the menu" className={iconClasses}>
                   <Search size={19} />
-                </button>
+                </Link>
               </motion.div>
             ) : null}
 
@@ -144,11 +146,15 @@ export default function Header({
                 <button
                   type="button"
                   onClick={openCart}
-                  aria-label={`Open cart, ${count} item${count === 1 ? "" : "s"}`}
+                  aria-label={
+                    mounted && count > 0
+                      ? `Open cart, ${count} item${count === 1 ? "" : "s"}`
+                      : "Open cart"
+                  }
                   className={iconClasses}
                 >
                   <ShoppingBag size={19} />
-                  {count > 0 ? (
+                  {mounted && count > 0 ? (
                     <AnimatePresence mode="popLayout" initial={false}>
                       <motion.span
                         key={count}

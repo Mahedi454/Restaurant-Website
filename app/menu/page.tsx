@@ -3,11 +3,16 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/animations/Reveal";
 import MenuFilter from "@/components/menu/MenuFilter";
+import { openGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Our Menu",
   description:
     "Browse the full iFOODS menu — breakfast, starters, mains, burgers, pizza, pasta, seafood, chicken, desserts, and drinks. Search, filter, and add your favorites to the cart.",
+  openGraph: openGraph(
+    "Our Menu",
+    "Browse the full iFOODS menu — search, filter, and add your favorites to the cart.",
+  ),
 };
 
 interface MenuPageProps {

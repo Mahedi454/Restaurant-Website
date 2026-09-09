@@ -20,7 +20,7 @@ export default function CategoryTabs({
 
   return (
     <div
-      role="tablist"
+      role="group"
       aria-label="Filter by category"
       className="flex gap-2 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
@@ -35,8 +35,7 @@ export default function CategoryTabs({
           <button
             key={option.id}
             type="button"
-            role="tab"
-            aria-selected={isActive}
+            aria-pressed={isActive}
             onClick={() => onChange(option.id)}
             className={cn(
               "flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream",

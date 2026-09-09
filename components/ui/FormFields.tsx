@@ -1,8 +1,11 @@
-import type {
-  InputHTMLAttributes,
-  ReactNode,
-  SelectHTMLAttributes,
-  TextareaHTMLAttributes,
+import {
+  Children,
+  cloneElement,
+  isValidElement,
+  type InputHTMLAttributes,
+  type ReactNode,
+  type SelectHTMLAttributes,
+  type TextareaHTMLAttributes,
 } from "react";
 import { cn } from "@/lib/utils";
 
@@ -23,6 +26,7 @@ export function FieldWrapper({
   children,
   className,
 }: FieldWrapperProps) {
+  const errorId = `${htmlFor}-error`;
   return (
     <div className={cn("flex flex-col gap-2", className)}>
       <label
@@ -32,9 +36,18 @@ export function FieldWrapper({
         {label}
         {required ? <span className="ml-1 text-terracotta">*</span> : null}
       </label>
-      {children}
+      {Children.map(children, (child) =>
+        isValidElement<{ "aria-invalid"?: boolean; "aria-describedby"?: string }>(
+          child,
+        )
+          ? cloneElement(child, {
+              "aria-invalid": error ? true : undefined,
+              "aria-describedby": error ? errorId : undefined,
+            })
+          : child,
+      )}
       {error ? (
-        <p role="alert" className="text-xs text-terracotta-dark">
+        <p id={errorId} role="alert" className="text-xs text-terracotta-dark">
           {error}
         </p>
       ) : null}

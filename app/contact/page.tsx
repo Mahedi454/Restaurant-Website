@@ -6,11 +6,16 @@ import Reveal from "@/components/animations/Reveal";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import MapPlaceholder from "@/components/contact/MapPlaceholder";
+import { openGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with iFOODS — questions, reservations, events, or just to say hello. Find our address, phone, hours, and socials.",
+  openGraph: openGraph(
+    "Contact",
+    "Get in touch with iFOODS — questions, reservations, events, or just to say hello.",
+  ),
 };
 
 export default function ContactPage() {

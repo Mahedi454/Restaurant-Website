@@ -18,6 +18,7 @@ export default function MenuSearch({
     <div className={cn("relative", className)}>
       <Search
         size={18}
+        aria-hidden="true"
         className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-stone"
       />
       <input
@@ -26,14 +27,14 @@ export default function MenuSearch({
         onChange={(event) => onChange(event.target.value)}
         placeholder="Search dishes, ingredients…"
         aria-label="Search dishes"
-        className="peer h-12 w-full appearance-none rounded-full border border-beige bg-cream-light pl-11 pr-11 text-sm text-charcoal outline-none transition-colors duration-300 placeholder:text-stone focus:border-charcoal/25 [&::-webkit-search-cancel-button]:hidden"
+        className="peer h-12 w-full appearance-none rounded-full border border-beige bg-cream-light pl-11 pr-11 text-sm text-charcoal outline-none transition-colors duration-300 placeholder:text-stone focus:border-charcoal/25 focus-visible:ring-2 focus-visible:ring-terracotta/40 [&::-webkit-search-cancel-button]:hidden"
       />
       {value ? (
         <button
           type="button"
           onClick={() => onChange("")}
           aria-label="Clear search"
-          className="absolute right-2.5 top-1/2 flex size-7 -translate-y-1/2 items-center justify-center rounded-full text-stone transition-colors hover:bg-charcoal/5 hover:text-charcoal"
+          className="absolute right-2.5 top-1/2 flex size-7 -translate-y-1/2 items-center justify-center rounded-full text-stone transition-colors hover:bg-charcoal/5 hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta"
         >
           <X size={15} />
         </button>

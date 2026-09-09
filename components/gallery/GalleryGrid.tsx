@@ -9,6 +9,7 @@ import { ChevronLeft, ChevronRight, Expand, X } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { EASE } from "@/lib/animations";
+import { useFocusTrap } from "@/lib/useFocusTrap";
 
 interface GalleryItem {
   src: string;
@@ -35,7 +36,10 @@ const galleryItems: GalleryItem[] = [
 export default function GalleryGrid() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const reduceMotion = useReducedMotion();
+
+  useFocusTrap(dialogRef, activeIndex !== null);
 
   const close = useCallback(() => setActiveIndex(null), []);
 
@@ -113,9 +117,11 @@ export default function GalleryGrid() {
       <AnimatePresence>
         {activeItem && activeIndex !== null ? (
           <motion.div
+            ref={dialogRef}
             role="dialog"
             aria-modal="true"
             aria-label={activeItem.alt}
+            tabIndex={-1}
             className="fixed inset-0 z-[120] flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

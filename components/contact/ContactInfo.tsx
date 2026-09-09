@@ -1,6 +1,11 @@
-import { ExternalLink, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Reveal from "@/components/animations/Reveal";
 import { siteConfig } from "@/data/site";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  XIcon,
+} from "@/components/ui/SocialIcons";
 
 const details = [
   {
@@ -14,9 +19,9 @@ const details = [
 ];
 
 const socials = [
-  { name: "Instagram", href: siteConfig.socials.instagram },
-  { name: "Facebook", href: siteConfig.socials.facebook },
-  { name: "Twitter", href: siteConfig.socials.twitter },
+  { name: "Instagram", href: siteConfig.socials.instagram, Icon: InstagramIcon },
+  { name: "Facebook", href: siteConfig.socials.facebook, Icon: FacebookIcon },
+  { name: "X (Twitter)", href: siteConfig.socials.twitter, Icon: XIcon },
 ];
 
 export default function ContactInfo() {
@@ -62,16 +67,17 @@ export default function ContactInfo() {
             rant about croutons.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            {socials.map((social) => (
+            {socials.map(({ name, href, Icon }) => (
               <a
-                key={social.name}
-                href={social.href}
+                key={name}
+                href={href}
                 target="_blank"
                 rel="noreferrer"
+                aria-label={name}
                 className="inline-flex h-10 items-center gap-2 rounded-full border border-charcoal/15 px-4 text-sm font-medium text-charcoal transition-all duration-300 hover:border-terracotta hover:text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream-light"
               >
-                {social.name}
-                <ExternalLink size={14} />
+                <Icon size={15} />
+                {name}
               </a>
             ))}
           </div>
