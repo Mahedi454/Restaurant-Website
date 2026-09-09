@@ -5,7 +5,7 @@ import { Heart, ShoppingBag } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { featuredDishes } from "@/data/dishes";
-import { useCart } from "@/store";
+import { useCartStore } from "@/store";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Rating from "@/components/ui/Rating";
@@ -16,7 +16,7 @@ import StaggerContainer, {
 } from "@/components/animations/StaggerContainer";
 
 export default function FeaturedMenu() {
-  const { addItem } = useCart();
+  const addItem = useCartStore((state) => state.addItem);
   const { toast } = useToast();
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
 
@@ -32,8 +32,8 @@ export default function FeaturedMenu() {
     });
   };
 
-  const handleAddToCart = (id: string, name: string, price: number) => {
-    addItem({ id, name, price });
+  const handleAddToCart = (id: string, name: string, price: number, image: string) => {
+    addItem({ id, name, price, image });
     toast({
       title: "Added to cart",
       description: `${name} is ready to order.`,
@@ -111,7 +111,7 @@ export default function FeaturedMenu() {
                     <button
                       type="button"
                       onClick={() =>
-                        handleAddToCart(dish.id, dish.name, dish.price)
+                        handleAddToCart(dish.id, dish.name, dish.price, dish.image)
                       }
                       className="mt-5 flex h-11 w-full items-center justify-center gap-2 rounded-full border border-charcoal/15 text-sm font-medium text-charcoal transition-all duration-300 hover:border-terracotta hover:bg-terracotta hover:text-cream-light active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
                     >

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="truffle-mushroom-pizza-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#BE9E6B"/>
+    <stop offset="100%" stop-color="#A3834C"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="330" rx="235" ry="56" fill="url(#shadow)"/>
+  <circle cx="400" cy="314" r="216" fill="#D9C9A3"/>
+  <circle cx="400" cy="314" r="182" fill="#8A5A36"/>
+  <circle cx="400" cy="314" r="182" fill="none" stroke="#D9CDBC" stroke-width="2.5"/>
+  <path d="M400 98 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 Z" fill="#3F7D4E" transform="rotate(-24 400 98) scale(0.9)"/>
+  <circle cx="400" cy="189.8" r="14" fill="#6E4528" opacity="0.9"/><circle cx="516.3995644873229" cy="291.73265791341794" r="13" fill="#6E4528" opacity="0.9"/><circle cx="545.7515474458068" cy="337.1299372652351" r="19" fill="#6E4528" opacity="0.9"/><circle cx="249" cy="314" r="19" fill="#6E4528" opacity="0.9"/><circle cx="394.3462815341949" cy="168.28881742061583" r="12" fill="#6E4528" opacity="0.9"/><circle cx="423.90984444404233" cy="212.7617233240511" r="17" fill="#6E4528" opacity="0.9"/><circle cx="521" cy="314" r="14" fill="#6E4528" opacity="0.9"/><circle cx="325.57043651750485" cy="265.3313811101832" r="13" fill="#6E4528" opacity="0.9"/><circle cx="501.0990633943054" cy="439.23583072924185" r="18" fill="#6E4528" opacity="0.9"/><circle cx="319.5216030391081" cy="183.33181575337426" r="18" fill="#6E4528" opacity="0.9"/><circle cx="398.46442214508994" cy="274.4241232500438" r="15" fill="#6E4528" opacity="0.9"/><circle cx="321.97957515360883" cy="270.12268492149065" r="12" fill="#6E4528" opacity="0.9"/><circle cx="232.73676027451924" cy="282.00239078314684" r="15" fill="#6E4528" opacity="0.9"/>
+</svg>

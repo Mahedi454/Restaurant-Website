@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="creamy-alfredo-pasta-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6E7C9"/>
+    <stop offset="100%" stop-color="#EFD9A8"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="352" rx="220" ry="44" fill="url(#shadow)"/>
+  <path d="M220 330 a180 178 0 0 0 360 0 Z" fill="url(#creamy-alfredo-pasta-main)"/>
+  <ellipse cx="400" cy="330" rx="178" ry="52" fill="#E6DAC7"/>
+  <path d="M226 322 a174 178 0 0 1 348 0 Z" fill="#F6E7C9"/>
+  <path d="M350 148 q12 18 0 34 M400 126 q12 20 0 40 M450 148 q12 18 0 34" stroke="#E7DED1" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.55"/>
+  <circle cx="348" cy="284" r="22" fill="#FBF3E0"/><circle cx="400" cy="274" r="16" fill="#FBF3E0"/><circle cx="448" cy="284" r="24" fill="#FBF3E0"/><path d="M300 322 q40 -26 88 -30 M330 344 q56 -22 118 -28 M320 366 q70 -24 150 -26 M352 388 q80 -24 158 -24" stroke="#D9B26A" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9"/><g transform="translate(520 232) scale(0.85)" fill="#3F7D4E" opacity="0.85"><path d="M0 6 q-10 -14 -32 -16 q10 -2 22 4 q-4 -12 -18 -18 q18 0 24 12 q0 -9 -4 -16 q10 4 14 14 q4 -6 8 -12 q6 8 6 18 q10 -2 18 2 q-12 10 -20 12 q16 8 24 22 q-20 -2 -28 -8 q6 12 12 26 q-16 -8 -22 -20 q-4 10 -8 22 q-10 -10 -10 -22 q-6 10 -14 16 q-2 -12 2 -24 Z"/></g>
+</svg>

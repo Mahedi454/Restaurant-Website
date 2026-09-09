@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="grilled-chicken-steak-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#D9B26A"/>
+    <stop offset="100%" stop-color="#B98A3C"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="342" rx="270" ry="52" fill="url(#shadow)"/>
+  <circle cx="400" cy="318" r="236" fill="url(#plate)"/>
+  <circle cx="400" cy="318" r="236" fill="none" stroke="#D9CDBC" stroke-width="3"/>
+  <circle cx="400" cy="318" r="196" fill="url(#plate-bg)"/>
+  <ellipse cx="400" cy="318" rx="148" ry="50" fill="url(#grilled-chicken-steak-main)"/>
+  <ellipse cx="400" cy="332" rx="121.36" ry="35" fill="#E8C889" opacity="0.85"/>
+  <path d="M268 312 a112 52 0 0 1 244 0 a104 46 0 0 1 -78 68 a124 54 0 0 1 -150 -12 a82 40 0 0 1 -16 -56 Z" fill="#5E3A22"/><g stroke="#E8B26A" stroke-width="6" stroke-linecap="round" opacity="0.85"><path d="M306 320 q40 -16 84 -14"/><path d="M330 350 q50 -12 102 -14"/></g><circle cx="520" cy="292" r="32" fill="#C94F3C" opacity="0.9"/><circle cx="520" cy="292" r="16" fill="#F6E6C8"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="chicken-milanese-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E8B26A"/>
+    <stop offset="100%" stop-color="#C98F3C"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="342" rx="270" ry="52" fill="url(#shadow)"/>
+  <circle cx="400" cy="318" r="236" fill="url(#plate)"/>
+  <circle cx="400" cy="318" r="236" fill="none" stroke="#D9CDBC" stroke-width="3"/>
+  <circle cx="400" cy="318" r="196" fill="url(#plate-bg)"/>
+  <ellipse cx="400" cy="318" rx="146" ry="50" fill="url(#chicken-milanese-main)"/>
+  <ellipse cx="400" cy="330" rx="119.72" ry="35" fill="#F3CE8F" opacity="0.85"/>
+  <path d="M260 300 q28 -26 70 -24 q52 2 88 44 q-10 28 -44 40 q-40 12 -76 2 q-44 -12 -38 -62 Z" fill="#F2C94C"/><path d="M286 314 q36 -12 66 6 q22 14 44 4" stroke="#E8B06A" stroke-width="6" stroke-linecap="round" fill="none"/><circle cx="520" cy="294" r="34" fill="#D9553E"/><circle cx="520" cy="294" r="18" fill="#F6C89A"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="urban-breakfast-platter-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#D9A43F"/>
+    <stop offset="100%" stop-color="#B98A3C"/>
+  </linearGradient>
+</defs><ellipse cx="400" cy="352" rx="280" ry="56" fill="url(#shadow)"/><path d="M120 340 L150 190 L470 190 L510 340 Z" fill="url(#plate)"/><rect x="150" y="196" width="340" height="140" rx="16" fill="url(#plate-bg)"/><circle cx="240" cy="258" r="52" fill="#FDF6EC"/><circle cx="240" cy="258" r="32" fill="#F2B33D"/><rect x="310" y="216" width="56" height="80" rx="8" fill="#8A4A2E"/><rect x="390" y="242" width="74" height="56" rx="10" fill="#E8B06A"/><circle cx="486" cy="264" r="30" fill="#EF7B41"/><circle cx="544" cy="264" r="30" fill="#EF7B41"/><circle cx="515" cy="238" r="30" fill="#F29F5F"/><g transform="translate(430 190) scale(0.8)" fill="#3F7D4E" opacity="0.8"><path d="M0 6 q-10 -14 -32 -16 q10 -2 22 4 q-4 -12 -18 -18 q18 0 24 12 q0 -9 -4 -16 q10 4 14 14 q4 -6 8 -12 q6 8 6 18 q10 -2 18 2 q-12 10 -20 12 q16 8 24 22 q-20 -2 -28 -8 q6 12 12 26 q-16 -8 -22 -20 q-4 10 -8 22 q-10 -10 -10 -22 q-6 10 -14 16 q-2 -12 2 -24 Z"/></g></svg>

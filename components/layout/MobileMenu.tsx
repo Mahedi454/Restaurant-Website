@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { mainNavigation } from "@/data/navigation";
 import { EASE } from "@/lib/animations";
 import { cn } from "@/lib/utils";
-import { useCart } from "@/store";
+import { useCartCount, useUiStore } from "@/store";
 
 interface MobileMenuProps {
   open: boolean;
@@ -55,7 +55,8 @@ export default function MobileMenu({
   showCart = true,
 }: MobileMenuProps) {
   const pathname = usePathname();
-  const { count } = useCart();
+  const count = useCartCount();
+  const openCart = useUiStore((state) => state.openCart);
 
   return (
     <AnimatePresence>
@@ -94,7 +95,11 @@ export default function MobileMenu({
                 {showCart ? (
                   <button
                     type="button"
-                    aria-label={`Cart, ${count} item${count === 1 ? "" : "s"}`}
+                    onClick={() => {
+                      openCart();
+                      onClose();
+                    }}
+                    aria-label={`Open cart, ${count} item${count === 1 ? "" : "s"}`}
                     className="relative flex size-10 items-center justify-center rounded-full text-charcoal transition-colors hover:bg-charcoal/5"
                   >
                     <ShoppingBag size={19} />

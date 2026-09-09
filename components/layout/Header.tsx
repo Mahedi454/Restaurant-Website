@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { mainNavigation } from "@/data/navigation";
 import { EASE } from "@/lib/animations";
 import { cn } from "@/lib/utils";
-import { useCart } from "@/store";
+import { useCartCount, useUiStore } from "@/store";
 import { Button } from "@/components/ui/Button";
 import MobileMenu from "@/components/layout/MobileMenu";
 
@@ -24,7 +24,8 @@ export default function Header({
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { count } = useCart();
+  const count = useCartCount();
+  const openCart = useUiStore((state) => state.openCart);
   const reduceMotion = useReducedMotion();
 
   useEffect(() => {
@@ -142,6 +143,7 @@ export default function Header({
               >
                 <button
                   type="button"
+                  onClick={openCart}
                   aria-label={`Open cart, ${count} item${count === 1 ? "" : "s"}`}
                   className={iconClasses}
                 >

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="tiramisu-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#8A5A36"/>
+    <stop offset="100%" stop-color="#5E3820"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="368" rx="185" ry="40" fill="url(#shadow)"/>
+  <path d="M200 320 a200 128 0 0 1 400 0 Z" fill="url(#plate-bg)"/>
+  <path d="M212 320 a188 148 0 0 1 376 0 Z" fill="url(#tiramisu-main)"/>
+  <path d="M214 318 a186 124 0 0 1 372 0 C 566 318 522 352 400 352 C 278 352 234 318 214 318 Z" fill="#6E4528" opacity="0.96"/>
+  <path d="M224 316 q176 34 352 0 q-4 58 -176 58 q-172 0 -176 -58 Z" fill="#4A2E1B" opacity="0.85"/>
+  <ellipse cx="400" cy="300" rx="50" ry="16" fill="#E7DED1" opacity="0.95"/>
+</svg>

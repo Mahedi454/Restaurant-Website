@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="crispy-fried-chicken-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E8A94F"/>
+    <stop offset="100%" stop-color="#C98F3C"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="342" rx="270" ry="52" fill="url(#shadow)"/>
+  <circle cx="400" cy="318" r="236" fill="url(#plate)"/>
+  <circle cx="400" cy="318" r="236" fill="none" stroke="#D9CDBC" stroke-width="3"/>
+  <circle cx="400" cy="318" r="196" fill="url(#plate-bg)"/>
+  <ellipse cx="400" cy="318" rx="150" ry="48" fill="url(#crispy-fried-chicken-main)"/>
+  <ellipse cx="400" cy="322" rx="122.99999999999999" ry="33.599999999999994" fill="#F3C98E" opacity="0.85"/>
+  <g transform="rotate(-28 420 322)"><ellipse cx="386" cy="282" rx="56" ry="34" fill="#D99345"/><ellipse cx="386" cy="286" rx="40" ry="24" fill="#EFB567" opacity="0.8"/></g><g transform="rotate(-14 420 322)"><ellipse cx="396" cy="312" rx="56" ry="34" fill="#D99345"/><ellipse cx="396" cy="316" rx="40" ry="24" fill="#EFB567" opacity="0.8"/></g><g transform="rotate(0 420 322)"><ellipse cx="406" cy="282" rx="56" ry="34" fill="#D99345"/><ellipse cx="406" cy="286" rx="40" ry="24" fill="#EFB567" opacity="0.8"/></g><g transform="rotate(14 420 322)"><ellipse cx="416" cy="312" rx="56" ry="34" fill="#D99345"/><ellipse cx="416" cy="316" rx="40" ry="24" fill="#EFB567" opacity="0.8"/></g><g transform="rotate(28 420 322)"><ellipse cx="426" cy="282" rx="56" ry="34" fill="#D99345"/><ellipse cx="426" cy="286" rx="40" ry="24" fill="#EFB567" opacity="0.8"/></g><ellipse cx="400" cy="300" rx="70" ry="44" fill="#E8A94F"/><path d="M396 250 l8 -30 M404 250 l-6 -28" stroke="#D99345" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M460 258 q44 -14 44 8 q0 16 -22 20" stroke="#D99345" stroke-width="9" stroke-linecap="round" fill="none"/>
+</svg>

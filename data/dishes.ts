@@ -16,7 +16,7 @@ export const featuredDishes: Dish[] = [
     description: "Creamy mushroom ragù, truffle oil, parmesan, and fresh herbs.",
     price: 18.9,
     rating: 4.9,
-    image: "/images/dish-truffle-pasta.svg",
+    image: "/images/menu/truffle-mushroom-pasta.svg",
   },
   {
     id: "classic-beef-burger",
@@ -25,7 +25,7 @@ export const featuredDishes: Dish[] = [
     description: "Grass-fed beef, aged cheddar, smoked bacon, and brioche.",
     price: 16.5,
     rating: 4.8,
-    image: "/images/dish-beef-burger.svg",
+    image: "/images/menu/classic-beef-burger.svg",
   },
   {
     id: "grilled-chicken-steak",
@@ -34,7 +34,7 @@ export const featuredDishes: Dish[] = [
     description: "Free-range chicken, herb butter, and charred greens.",
     price: 19.9,
     rating: 4.7,
-    image: "/images/dish-chicken-steak.svg",
+    image: "/images/menu/grilled-chicken-steak.svg",
   },
   {
     id: "creamy-alfredo-pasta",
@@ -43,7 +43,7 @@ export const featuredDishes: Dish[] = [
     description: "Fettuccine, parmesan cream, cracked pepper, and parsley.",
     price: 17.5,
     rating: 4.6,
-    image: "/images/dish-alfredo-pasta.svg",
+    image: "/images/menu/creamy-alfredo-pasta.svg",
   },
   {
     id: "margherita-pizza",
@@ -52,7 +52,7 @@ export const featuredDishes: Dish[] = [
     description: "San Marzano tomatoes, fresh mozzarella, and basil.",
     price: 15.8,
     rating: 4.9,
-    image: "/images/dish-margherita-pizza.svg",
+    image: "/images/menu/margherita-pizza.svg",
   },
   {
     id: "grilled-salmon",
@@ -61,7 +61,7 @@ export const featuredDishes: Dish[] = [
     description: "Atlantic salmon, lemon beurre blanc, and asparagus.",
     price: 24.5,
     rating: 4.8,
-    image: "/images/dish-grilled-salmon.svg",
+    image: "/images/menu/grilled-salmon.svg",
   },
   {
     id: "crispy-fried-chicken",
@@ -70,7 +70,7 @@ export const featuredDishes: Dish[] = [
     description: "Buttermilk-brined, honey glaze, slaw, and house sauce.",
     price: 14.9,
     rating: 4.7,
-    image: "/images/dish-crispy-chicken.svg",
+    image: "/images/menu/crispy-fried-chicken.svg",
   },
   {
     id: "chocolate-lava-cake",
@@ -79,6 +79,6 @@ export const featuredDishes: Dish[] = [
     description: "Molten chocolate center, vanilla gelato, and berries.",
     price: 9.5,
     rating: 5.0,
-    image: "/images/dish-lava-cake.svg",
+    image: "/images/menu/chocolate-lava-cake.svg",
   },
 ];

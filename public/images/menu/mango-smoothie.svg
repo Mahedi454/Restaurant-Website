@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="mango-smoothie-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E08A2E"/>
+    <stop offset="100%" stop-color="#C4701F"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="402" rx="200" ry="40" fill="url(#shadow)"/>
+  <path d="M330 118 L470 118 L452 468 Q440 478 400 478 Q360 478 348 468 Z" fill="#E9DFD0"/>
+  <path d="M340 160 a76 40 0 0 1 120 0 Z" fill="#F6F0E7"/>
+  <path d="M348 176 a66 40 0 0 1 104 0 L443 466 a48 12 0 0 1 -86 0 Z" fill="url(#mango-smoothie-main)"/>
+  
+  <path d="M360 100 q-4 -22 6 -36 Q382 84 378 102" stroke="#EFE7DB" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="524" cy="150" r="54" fill="#F29F4F"/><circle cx="524" cy="150" r="40" fill="#FBEBC2"/><path d="M524 112 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 Z" fill="#F29F4F"/>
+</svg>

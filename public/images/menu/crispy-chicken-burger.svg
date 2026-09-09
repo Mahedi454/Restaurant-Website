@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="crispy-chicken-burger-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#EAB076"/>
+    <stop offset="100%" stop-color="#DEA05C"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="380" rx="220" ry="42" fill="url(#shadow)"/>
+  <ellipse cx="400" cy="352" rx="192" ry="36" fill="url(#plate-bg)"/>
+  <path d="M400 156 q58 28 94 72 q-16 10 -34 10 l-120 0 q-18 0 -34 -10 q36 -44 94 -72 Z" fill="#F0C489"/>
+  <path d="M300 236 q-16 12 -26 28 q-8 14 -12 28 l276 0 q-4 -14 -12 -28 q-10 -16 -26 -28 Z" fill="#D99345"/>
+  <path d="M258 296 q-6 24 -6 48 l296 0 q0 -26 -6 -48 Z" fill="#F3CE8F"/>
+  <path d="M300 296 a138 32 0 0 1 200 0 Z" fill="#F6E3C3" opacity="0.95"/>
+  <ellipse cx="368" cy="170" rx="16" ry="9" fill="#F4E3C6" opacity="0.9"/>
+  <ellipse cx="432" cy="170" rx="16" ry="9" fill="#F4E3C6" opacity="0.9"/>
+  <ellipse cx="400" cy="170" rx="16" ry="9" fill="#F4E3C6" opacity="0.9"/>
+  <g opacity="0.9"><path d="M308 330 q12 10 4 22 M360 328 q12 12 2 24 M414 330 q10 10 2 22 M468 330 q10 10 0 22 M508 336 q-6 12 -16 14 M300 360 q-4 14 -16 16 M500 366 q-10 8 -18 6" stroke="#E0B878" stroke-width="4" stroke-linecap="round" fill="none"/></g>
+</svg>

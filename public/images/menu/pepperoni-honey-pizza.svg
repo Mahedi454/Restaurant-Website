@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="pepperoni-honey-pizza-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E8B64F"/>
+    <stop offset="100%" stop-color="#CE8A3C"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="330" rx="235" ry="56" fill="url(#shadow)"/>
+  <circle cx="400" cy="314" r="216" fill="#F0C489"/>
+  <circle cx="400" cy="314" r="182" fill="#C8301B"/>
+  <circle cx="400" cy="314" r="182" fill="none" stroke="#D9CDBC" stroke-width="2.5"/>
+  <path d="M400 98 l10 24 24 10 -24 10 -10 24 -10 -24 -24 -10 24 -10 Z" fill="#3F7D4E" transform="rotate(-24 400 98) scale(0.9)"/>
+  <circle cx="513.6556884535069" cy="412.78042027926944" r="15" fill="#9E3B1E" opacity="0.9"/><circle cx="593.2136008836021" cy="264.1372023327049" r="12" fill="#9E3B1E" opacity="0.9"/><circle cx="271.97499210841295" cy="334.31683678703087" r="19" fill="#9E3B1E" opacity="0.9"/><circle cx="561.9684852688646" cy="342.3351358134169" r="13" fill="#9E3B1E" opacity="0.9"/><circle cx="388.5802840520631" cy="249.10887602289944" r="12" fill="#9E3B1E" opacity="0.9"/><circle cx="461.2035043816343" cy="297.15938980797034" r="13" fill="#9E3B1E" opacity="0.9"/><circle cx="520.4153505104817" cy="238.11583747075656" r="18" fill="#9E3B1E" opacity="0.9"/><circle cx="482.69295062915995" cy="341.087995351393" r="15" fill="#9E3B1E" opacity="0.9"/><circle cx="249.69355133395052" cy="365.927515889114" r="16" fill="#9E3B1E" opacity="0.9"/><circle cx="398.5165454528309" cy="390.4883486794639" r="17" fill="#9E3B1E" opacity="0.9"/><circle cx="419.8371683128888" cy="264.9480451949756" r="15" fill="#9E3B1E" opacity="0.9"/><circle cx="332.2677243421112" cy="302.1507613871166" r="15" fill="#9E3B1E" opacity="0.9"/><circle cx="382.6033623799918" cy="202.59484226657335" r="13" fill="#9E3B1E" opacity="0.9"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#F3ECE1"/><defs>
+  <radialGradient id="shadow" cx="50%" cy="42%" r="62%">
+    <stop offset="0%" stop-color="#2A1E17" stop-opacity="0.34"/>
+    <stop offset="70%" stop-color="#2A1E17" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2A1E17" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FBF7F1"/>
+    <stop offset="100%" stop-color="#EFE7DB"/>
+  </linearGradient>
+  <linearGradient id="plate-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6F0E7"/>
+    <stop offset="100%" stop-color="#E9DFD0"/>
+  </linearGradient>
+  <linearGradient id="herb-roasted-lamb-chops-main" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#8A4A2E"/>
+    <stop offset="100%" stop-color="#5E3120"/>
+  </linearGradient>
+</defs>
+  <ellipse cx="400" cy="342" rx="270" ry="52" fill="url(#shadow)"/>
+  <circle cx="400" cy="318" r="236" fill="url(#plate)"/>
+  <circle cx="400" cy="318" r="236" fill="none" stroke="#D9CDBC" stroke-width="3"/>
+  <circle cx="400" cy="318" r="196" fill="url(#plate-bg)"/>
+  <ellipse cx="400" cy="318" rx="150" ry="50" fill="url(#herb-roasted-lamb-chops-main)"/>
+  <ellipse cx="400" cy="334" rx="122.99999999999999" ry="35" fill="#6E381F" opacity="0.85"/>
+  <g stroke="#D9B26A" stroke-width="18" stroke-linecap="round"><line x1="238" y1="300" x2="238" y2="370"/><line x1="316" y1="290" x2="316" y2="370"/><line x1="492" y1="300" x2="492" y2="370"/><line x1="568" y1="296" x2="568" y2="366"/></g><path d="M200 336 q78 -30 140 0 q72 26 132 0 a16 26 0 0 1 62 0 q-44 44 -110 44 q-88 0 -132 -22 q-60 -16 -92 -22 Z" fill="#6E3824"/><ellipse cx="276" cy="288" rx="44" ry="20" fill="#8A4A2E"/><ellipse cx="444" cy="286" rx="46" ry="20" fill="#8A4A2E"/><g transform="translate(366 250) scale(0.95)" fill="#3F7D4E" opacity="0.85"><path d="M0 6 q-10 -14 -32 -16 q10 -2 22 4 q-4 -12 -18 -18 q18 0 24 12 q0 -9 -4 -16 q10 4 14 14 q4 -6 8 -12 q6 8 6 18 q10 -2 18 2 q-12 10 -20 12 q16 8 24 22 q-20 -2 -28 -8 q6 12 12 26 q-16 -8 -22 -20 q-4 10 -8 22 q-10 -10 -10 -22 q-6 10 -14 16 q-2 -12 2 -24 Z"/></g>
+</svg>

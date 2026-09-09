@@ -3,7 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { CartProvider } from "@/store";
+import CartDrawer from "@/components/cart/CartDrawer";
 import { ToastProvider } from "@/components/ui/Toast";
 
 const inter = Inter({
@@ -39,11 +39,10 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-cream text-charcoal">
         <ToastProvider>
-          <CartProvider>
-            <Header />
-            <main className="flex-1 pt-24 lg:pt-28">{children}</main>
-            <Footer />
-          </CartProvider>
+          <Header />
+          <main className="flex-1 pt-24 lg:pt-28">{children}</main>
+          <Footer />
+          <CartDrawer />
         </ToastProvider>
       </body>
     </html>
